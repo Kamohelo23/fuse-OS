@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: fuseos-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: JWT_SECRET
+        value: d5f8a6e3b2c7a9b4e1d2f8a6c3b9e7d5f1a2b8c7d9e3f6a5b2c8d7e9
+      - key: ALLOWED_ORIGINS
+        value: https://fuse-j4o4guj5l-kamohelo23s-projects.vercel.app
